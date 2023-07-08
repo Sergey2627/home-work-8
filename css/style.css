@@ -121,15 +121,16 @@ header a {
 }
 
 .submenu {
-  display: none;
+  opacity: 0;
   position: absolute;
   top: 100%;
-  left: 0;
+  right: -100%;
   width: 100%;
   background: rgba(249, 241, 241, 0.367);
   padding-top: 10px;
   border-radius: 5px;
   font-family: 'NanumMyeongjo-Regular', sans-serif;
+  transition: max-height 1s ease-in-out, opacity 1s ease-in-out, right 1s ease-in-out;
 }
 
 .li_3 {
@@ -137,21 +138,24 @@ header a {
 }
 
 .submenu_2 {
-  display: none;
+  opacity: 0;
   position: absolute;
   top: 0;
   right: 100%;
   background: rgba(249, 241, 241, 0.367);
   font-family: 'AlegreyaSans-Regular', sans-serif;
   width: 100%;
+  transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .submenu li:hover .submenu_2 {
-  display: block;
+  opacity: 1;
 }
 
 .header-list li:hover .submenu {
-  display: block;
+  opacity: 1;
+  max-height: 500px;
+  right: 0;
 }
 
 section {
@@ -341,6 +345,9 @@ h3 {
 .footer-icons div svg {
   width: 40px;
   height: 40px;
+  fill: #000;
+  stroke: #07000028;
+  transition: fill 0.3s, stroke 1s;
 }
 
 .footer-icons div a svg:hover {
