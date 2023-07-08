@@ -107,6 +107,7 @@ body {
 .header-logo {
   text-transform: uppercase;
   position: static;
+  padding-left: 40px;
 }
 
 header a {
@@ -131,13 +132,18 @@ header a {
   font-family: 'NanumMyeongjo-Regular', sans-serif;
 }
 
+.li_3 {
+  position: relative;
+}
+
 .submenu_2 {
   display: none;
   position: absolute;
-  top: 70%;
-  left: -21%;
+  top: 0;
+  right: 100%;
   background: rgba(249, 241, 241, 0.367);
   font-family: 'AlegreyaSans-Regular', sans-serif;
+  width: 100%;
 }
 
 .submenu li:hover .submenu_2 {
@@ -274,4 +280,70 @@ h3 {
 .flex-box {
   display: flex;
   justify-content: center;
+}
+
+.header-list .li_1 > a {
+  position: relative;
+  padding-right: 40px;
+}
+
+.arrow-hw {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  padding-bottom: 10px;
+}
+
+.header-logo > a {
+  position: relative;
+  padding: 50px;
+}
+
+.seasons {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20%;
+  left: 1%;
+}
+
+.header-list li > a {
+  position: relative;
+  padding-left: 40px;
+}
+
+.tree {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+}
+
+.arrow-left {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15%;
+  right: 70%;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 0;
+  background: linear-gradient(to bottom, #ccffff 0%, #ffffff 100%);
+}
+
+.footer-icons div svg {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-icons div a svg:hover {
+  stroke:rgb(0, 255, 55);
+  fill: whitesmoke;
 }
